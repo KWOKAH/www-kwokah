@@ -258,10 +258,6 @@ p {
   margin-left: -46px;
 }
 
-.image-peeking-logo {
-  width: 20%;
-}
-
 .column {
   display: -webkit-box;
   display: -webkit-flex;
@@ -286,15 +282,49 @@ p {
   font-weight: 700;
 }
 
-.container-2 {
+.cookiebox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.nocookestext {
+  color: #262c46;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.nocookieslogo {
+  width: 20%;
+  margin-top: auto;
+}
+
+.nocooketextbox {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.nocookienot {
+  color: red;
+  font-weight: 700;
+}
+
+.text-span-2 {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 991px) {
