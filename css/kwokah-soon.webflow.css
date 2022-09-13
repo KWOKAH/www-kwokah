@@ -92,7 +92,7 @@ p {
 }
 
 .subtitle {
-  margin-top: 60px;
+  margin-top: 100px;
   color: #fff;
   font-size: 30px;
   line-height: 34px;
@@ -124,7 +124,7 @@ p {
 }
 
 .sign-up-form {
-  margin-top: 47px;
+  margin-top: 20px;
 }
 
 .social-widget {
@@ -157,13 +157,25 @@ p {
 }
 
 .header-section {
-  height: 100vh;
-  padding-top: 120px;
-  padding-bottom: 237px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 59, 76, 0.6)), to(rgba(7, 59, 76, 0.6))), url('../images/PearlBeach.jpeg');
   background-image: linear-gradient(180deg, rgba(7, 59, 76, 0.6), rgba(7, 59, 76, 0.6)), url('../images/PearlBeach.jpeg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -181,6 +193,8 @@ p {
 }
 
 .container {
+  margin-top: auto;
+  margin-bottom: auto;
   padding-right: 129px;
   padding-left: 129px;
   background-color: transparent;
@@ -327,15 +341,173 @@ p {
   font-weight: 700;
 }
 
+.topmenu {
+  display: block;
+  max-width: 1700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.topmenu-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.topmenu-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.topmenu-brand {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.brand {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-image: url('../images/KWOKAH-Brand.svg');
+  background-position: 50% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.topmenu-item {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: hsla(0, 0%, 100%, 0);
+}
+
+.topmenu-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.utility-page-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.utility-page-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.utility-page-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@media screen and (min-width: 1920px) {
+  .header-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .subtitle {
     color: #fff;
-  }
-
-  .header-section {
-    padding-top: 100px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(null), to(null));
-    background-image: linear-gradient(180deg, null, null);
   }
 
   .copyright {
@@ -345,6 +517,10 @@ p {
   .container {
     padding-right: 79px;
     padding-left: 79px;
+  }
+
+  .topmenu-spacer {
+    display: none;
   }
 }
 
