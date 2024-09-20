@@ -22,7 +22,7 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export function ThemeProvider({
   children,
-  defaultTheme = "dark",
+  defaultTheme = "system",
   storageKey = "vite-ui-theme",
   ...props
 }: ThemeProviderProps) {
@@ -72,5 +72,15 @@ export const useTheme = () => {
   if (context === undefined)
     throw new Error("useTheme must be used within a ThemeProvider");
 
-  return context;
+  const { theme, setTheme } = context;
+
+  const effectiveTheme = theme === "system" 
+    ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+    : theme;
+
+  return {
+    theme: effectiveTheme as "light" | "dark",
+    setTheme: (newTheme: "light" | "dark") => setTheme(newTheme),
+  };
 };
+
