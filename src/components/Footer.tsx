@@ -10,10 +10,10 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-patua text-2xl font-medium flex items-center"
           >
-            <LogoIcon />
-            KWOKAH
+            <LogoIcon  />
+            <span className="inline-block align-middle">KWOKAH</span>
           </a>
         </div>
 

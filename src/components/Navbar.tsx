@@ -47,14 +47,14 @@ export const Navbar = () => {
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
-          <NavigationMenuItem className="font-bold flex">
+          <NavigationMenuItem className="font-bold flex items-center">
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-patua font-bold text-xl flex"
+              className="ml-2 font-patua text-2xl font-medium flex items-center"
             >
-              <LogoIcon />
-              KWOKAH
+              <LogoIcon  />
+              <span className="inline-block align-middle">KWOKAH</span>
             </a>
           </NavigationMenuItem>
 
