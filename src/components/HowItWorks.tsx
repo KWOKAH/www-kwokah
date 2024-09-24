@@ -10,19 +10,19 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accessibility",
+    title: "Do the right thing",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "Do it well",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "Do things right",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },

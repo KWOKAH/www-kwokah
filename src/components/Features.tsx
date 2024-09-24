@@ -1,4 +1,3 @@
-import { Badge } from "./ui/badge";
 import {
   Card,
   CardContent,
@@ -18,62 +17,42 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Do the Right Thing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Providing a safe work environment with appropriate working hours and an honest, living wage are obviously the absolute bare minima ... sadly many fast-fashion factories already stumble at this, seemingly, low hurdle. To plug any loopholes, avoid any subcontracting.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Do it Well",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Sustainability's unsung hero is for everyone to actually buy less stuff! To consume less we need better quality products that last longer. Production partners must be  equipped with modern-tech and lean processes to efficiently produce top-notch products that are built to last.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Do things Right",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "The textile industry has a very poor environmental tracl record. Often with excessive water use, toxic chemicals, and CO2 emissions. We're committed to reducing our environmental footprint, minimize water use, manage waste water, avoid or handle chemicals responsibly, and use renewable energy.",
     image: image,
   },
-];
-
-const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
 ];
 
 export const Features = () => {
   return (
     <section
       id="features"
-      className="container py-24 sm:py-32 space-y-8"
+      className="container text-center py-24 sm:py-32"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        Our{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Values
         </span>
       </h2>
 
-      <div className="flex flex-wrap md:justify-center gap-4">
-        {featureList.map((feature: string) => (
-          <div key={feature}>
-            <Badge
-              variant="secondary"
-              className="text-sm"
-            >
-              {feature}
-            </Badge>
-          </div>
-        ))}
-      </div>
+      <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
+       We're very picky when it comes to deciding who makes our products, 'cause how they are made must match our standards and values!
+      </p>
+
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image }: FeatureProps) => (
