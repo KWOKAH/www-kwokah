@@ -19,7 +19,7 @@ const features: FeatureProps[] = [
   {
     title: "Do the Right Thing",
     description:
-      "Providing a safe work environment with appropriate working hours and an honest, living wage are obviously the absolute bare minima ... sadly many fast-fashion factories already stumble at this, seemingly, low hurdle. To plug any loopholes, avoid any subcontracting.",
+      "Provide everyone with a safe work environment with appropriate working hours and an honest, living wage are obviously the absolute bare minima ... sadly many fast-fashion factories already stumble at this, seemingly, low hurdle. To plug any loopholes, avoid any subcontracting.",
     image: image4,
   },
   {
